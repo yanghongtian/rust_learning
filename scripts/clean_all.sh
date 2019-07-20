@@ -1,6 +1,8 @@
 #!/bin/bash
 
-examples_path=`pwd`/../examples
+path=$(cd `dirname $0`; pwd)
+
+examples_path=$path/../examples
 
 for file in `ls ${examples_path}`
 do
